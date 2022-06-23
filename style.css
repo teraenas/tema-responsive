@@ -1,10 +1,6 @@
 body {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: 'Outfit', sans-serif;
   min-height: 100vh;
-}
-
-main {
-  display: grid;
   background-color: var(--clr-primary-background);
 }
 
@@ -70,66 +66,161 @@ nav .avatar {
 
 .search-field input {
   flex: 1;
-  appearance: none;
   padding: 1rem;
+  appearance: none;
   font-size: 1.125rem;
-  letter-spacing: 0.1rem;
+  font-weight: 200;
   color: white;
   background-color: inherit;
   border: none;
 }
 
 section h1 {
-  font-weight: 300;
+  font-size: clamp(1.5rem, 3.75vw, 2rem);
+  font-weight: 200;
   color: white;
-  margin-bottom: 1rem;
-  padding: 0 var(--padding-sm);
 }
 
 .trending {
-  width: 100vw;
+  max-width: 100vw;
+}
+
+.trending h1 {
+  padding-left: var(--padding-sm);
+  margin-bottom: var(--padding-sm);
+}
+
+.media-item {
+  position: relative;
+}
+
+.media-item .media-item__thumbnail {
+  aspect-ratio: 16 / 9;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+
+.media-item .info {
+  color: white;
+  padding-top: 0.66rem;
+}
+
+.media-item .info .details {
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-bottom: 0.36em;
+  font-size: 0.85rem;
+  color: rgba(255 255 255 / 0.6);
+}
+
+.media-item .info .details .type {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.media-item .info .details .type .bxs-film {
+  font-size: 1.25em;
+}
+
+.media-item .info .details .bxs-circle {
+  font-size: 0.3em;
+}
+
+.media-item .add-to-favourites {
+  position: absolute;
+  top: var(--padding-sm);
+  right: var(--padding-sm);
+  padding: 0.5em;
+  aspect-ratio: 1;
+  appearance: none;
+  font-size: 1.32em;
+  color: white;
+  background-color: rgba(0 0 0 / 0.5);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1; /* z-index because on really small screen sizes, the movie info overlaps this */
+}
+
+.media-item .add-to-favourites:hover,
+.media-item .add-to-favourites:active {
+  color: rgba(0 0 0 / 0.5);
+  background-color: rgba(255 255 255 / 0.8);
+}
+
+.media-item .info .title {
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .media-scroller {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: 66.66%;
+  gap: var(--padding-sm);
+  padding: 0 var(--padding-sm);
   overflow-x: scroll;
+  overscroll-behavior: contain;
   scroll-snap-type: x mandatory;
+  scroll-padding-inline: var(--padding-sm);
 }
 
-.media-item {
-  position: relative;
-  display: grid;
+.media-scroller .media-item {
   scroll-snap-align: start;
 }
 
-.media-item:last-child {
+.media-scroller .media-item:last-child {
   scroll-snap-align: end;
 }
 
-.info {
-  color: white;
+.media-scroller .media-item__thumbnail {
+  position: relative;
+  isolation: isolate;
 }
 
-.info .details {
-  display: flex;
-  align-items: center;
-  gap: 0.7em;
-  font-size: 0.8rem;
+.media-scroller .media-item__thumbnail::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0 0 0 / 0) 30%, rgba(0 0 0 / 0.8));
+  mix-blend-mode: multiply;
 }
 
-.info .details .bxs-circle {
-  font-size: 0.3em;
+.media-scroller .media-item .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--padding-sm);
 }
 
-.info .details .type {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
+.media-scroller .media-item .info .details > i:last-of-type {
+  display: none;
 }
 
-.info .title {
-  font-size: 1.25rem;
-  font-weight: 400;
+.media-scroller .media-item .info .title {
+  font-size: clamp(1.125em, 3.75vw, 1.5em);
+}
+
+.media-scroller .media-item .info .rating {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.2em 0.6em;
+  font-size: 1.125em;
+  background-color: rgba(255 255 255 / 0.2);
+  border-radius: 1em;
+}
+
+.recommended {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(186px, 1fr));
+  gap: var(--padding-sm);
+  padding: 0 var(--padding-sm);
+}
+
+.recommended h1 {
+  grid-column: 1 / -1;
 }

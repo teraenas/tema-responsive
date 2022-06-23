@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) {
+  header {
+    padding: var(--padding-md) var(--padding-md) 0 var(--padding-md);
+  }
+
+  nav {
+    padding: var(--padding-md);
+    border-radius: 0.66rem;
+  }
+
+  .search-field {
+    padding: var(--padding-md);
+  }
+
+  .media-scroller .media-item .info .details > i:last-of-type {
+    display: inline-block;
+  }
+
+  .media-scroller .media-item .info .rating {
+    all: unset;
+  }
+
+  .trending h1 {
+    padding-left: var(--padding-md);
+    margin-bottom: var(--padding-md);
+  }
+
+  .media-scroller {
+    gap: var(--padding-md);
+    padding: 0 var(--padding-md);
+    scroll-padding-inline: var(--padding-md);
+  }
+
+  .media-scroller .media-item .add-to-favourites {
+    top: var(--padding-md);
+    right: var(--padding-md);
+  }
+
+  .media-scroller .media-item .info {
+    padding: var(--padding-md);
+  }
+
+  .recommended {
+    gap: var(--padding-md);
+    padding: 0 var(--padding-md);
+  }
+}
