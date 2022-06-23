@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <title>Responsive Layout</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <span class="logo"><a href="#"><i class='bx bxs-movie bx-md'></i></a></span>
+            <ul class="main-menu">
+                <li><a href=""><i class='bx bxs-grid-alt bx-sm'></i></a></li>
+                <li><a href=""><i class='bx bxs-film bx-sm'></i></a></li>
+                <li><a href=""><i class='bx bx-tv bx-sm'></i></a></li>
+                <li><a href=""><i class='bx bxs-bookmark bx-sm'></i></a></li>
+            </ul>
+            <span class="avatar"><img src="./images/avatar.jpg" alt=""></span>
+        </nav>
+        <div class="content">
+            <div class="search-field">
+                <button><i class='bx bx-search'></i></button>
+                <input type="text" id="search-input" placeholder="Search for movies or TV series">
+            </div>
+            <section class="trending">
+                <h1>Trending</h1>
+                <div class="media-scroller">
+                    <div class="media-item">
+                        <img src="./images/interstellar.jpg" alt="">
+                        <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                        <div class="info">
+                            <div class="details">
+                                <span class="year">2014</span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="type">
+                                    <i class='bx bxs-film'></i> Movie
+                                </span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="rating">PG</span>
+                            </div>
+                            <h2 class="title">Interstellar</h2>
+                        </div>
+                    </div>
+                    <div class="media-item">
+                        <img src="./images/game-of-thrones.jpg" alt="">
+                        <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                        <div class="info">
+                            <div class="details">
+                                <span class="year">2011</span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="type">
+                                    <i class='bx bx-tv'></i> TV Series
+                                </span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="rating">PG</span>
+                            </div>
+                            <h2 class="title">Game of Thrones</h2>
+                        </div>
+                    </div>
+                    <div class="media-item">
+                        <img src="./images/fargo.jpg" alt="">
+                        <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                        <div class="info">
+                            <div class="details">
+                                <span class="year">2014</span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="type">
+                                    <i class='bx bx-tv'></i> TV Series
+                                </span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="rating">PG</span>
+                            </div>
+                            <h2 class="title">Fargo</h2>
+                        </div>
+                    </div>
+                    <div class="media-item">
+                        <img src="./images/event-horizon.jpg" alt="">
+                        <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                        <div class="info">
+                            <div class="details">
+                                <span class="year">1997</span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="type">
+                                    <i class='bx bxs-film'></i> Movie
+                                </span>
+                                <i class='bx bxs-circle'></i>
+                                <span class="rating">PG</span>
+                            </div>
+                            <h2 class="title">Event Horizon</h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="recommended">
+                <h1>Recommended for you</h1>
+                <div class="media-item">
+                    <img src="./images/dune.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">2021</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bxs-film'></i> Movie
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Dune</h2>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <img src="./images/lotr-1.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">2001</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bxs-film'></i> Movie
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Lord of the Rings: The Fellowship of the Ring</h2>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <img src="./images/lotr-2.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">2002</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bxs-film'></i> Movie
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Lord of the Rings: The Two Towers</h2>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <img src="./images/lotr-3.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">2003</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bxs-film'></i> Movie
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Lord of the Rings: The Return of the King</h2>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <img src="./images/interstellar.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">2014</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bxs-film'></i> Movie
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Interstellar</h2>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <img src="./images/game-of-thrones.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">2011</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bx-tv'></i> TV Series
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Game of Thrones</h2>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <img src="./images/fargo.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">2014</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bx-tv'></i> TV Series
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Fargo</h2>
+                    </div>
+                </div>
+                <div class="media-item">
+                    <img src="./images/event-horizon.jpg" alt="">
+                    <button class="add-to-favourites"><i class='bx bxs-bookmark'></i></button>
+                    <div class="info">
+                        <div class="details">
+                            <span class="year">1997</span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="type">
+                                <i class='bx bxs-film'></i> Movie
+                            </span>
+                            <i class='bx bxs-circle'></i>
+                            <span class="rating">PG</span>
+                        </div>
+                        <h2 class="title">Event Horizon</h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
