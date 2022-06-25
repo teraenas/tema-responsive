@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --clr-rimary-medium-blue: rgb(22 29 47);
+  --clr-primary-background: rgb(16 20 31);
+  --clr-accent: rgb(250 72 68);
+
+  --padding-sm: 1rem;
+  --padding-md: 1.5rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+section + section {
+  margin-top: 2rem;
+}

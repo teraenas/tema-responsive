@@ -1,9 +1,6 @@
 @media screen and (min-width: 768px) {
-  header {
-    padding: var(--padding-md) var(--padding-md) 0 var(--padding-md);
-  }
-
   nav {
+    margin: var(--padding-md) var(--padding-md) 0 var(--padding-md);
     padding: var(--padding-md);
     border-radius: 0.66rem;
   }
